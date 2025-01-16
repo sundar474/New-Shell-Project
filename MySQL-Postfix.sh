@@ -2,6 +2,18 @@
 
 # our program goal is to install mysql
 
+# this function should validate the previuos command and inform user it is sccess or failure
+VALIDATE(){
+    #$1 --> it will received the argument 1
+    if [ $1 -ne 0 ]
+    then 
+        echo "$2 ... FAILURE"
+        exit 1 
+    else 
+        echo "$2 ... SUCCESS"
+    fi
+}
+
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
@@ -15,20 +27,6 @@ fi
 # it is our responsibility again to check installation is success or not
 yum install mysql -y
 
-if [ $? -ne 0 ]
-then
-    echo "Installation of mysql is error"
-    exit 1
-else
-    echo "Installation of mysql is success"
-fi
 
 yum install postfix -y
 
-if [ $? -ne 0 ]
-then
-    echo "Installation of postfix is error"
-    exit 1
-else
-    echo "Installation of postfix is success"
-fi
