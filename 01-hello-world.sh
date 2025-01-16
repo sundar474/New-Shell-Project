@@ -2,8 +2,11 @@
 
 echo "Hi Team, Today I'm giving demo on Shell Scripting"
 
+PERSON1=Ramesh
+PERSON2=Suresh
 
-echo "Ramesh: Hi Suresh, Good Morning"
-echo "Suresh: Goood Morning Ramesh"
-echo "Ramesh: How Are You Suresh"
-echo "Suresh: I am good, How Are You"
+
+echo "$PERSON1: Hi $PERSON2, Good Morning"
+echo "$PERSON2: Goood Morning $PERSON1"
+echo "$PERSON1: How Are You $PERSON2"
+echo "Suresh: I am good, How Are You $PERSON1"
