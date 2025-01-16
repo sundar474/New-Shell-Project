@@ -27,6 +27,8 @@ fi
 # it is our responsibility again to check installation is success or not
 yum install mysql -y
 
+VALIDATE $? "Installing MYSQL"
 
 yum install postfix -y
 
+VALIDATE $? "Installing Pstfix"
