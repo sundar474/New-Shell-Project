@@ -2,8 +2,8 @@
 
 echo "Hello World, I am Learning Shell Scripting"
 
-PERSON1=Ramesh
-PERSON2=Suresh
+PERSON1=Dhone
+PERSON2=Sachin
 
 echo "$PERSON1: Hi $PERSON2, Good Morning"
 echo "$PERSON2: Good Morning $PERSON1"
