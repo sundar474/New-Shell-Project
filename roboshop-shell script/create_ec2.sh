@@ -3,7 +3,7 @@
 NAMES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 INSTANCE_TYPE=""
 IMAGE_ID=ami-0b4f379183e5706b9
-SECURITY_GROUP_ID=sg-0189d4870cc65fd55
+SECURITY_GROUP_ID=sg-07a1cb99873cf26ec
 DOMAIN_NAME=sundarit.online
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
